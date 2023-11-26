@@ -1,6 +1,6 @@
 --
-layout: splash
-title: "Code PlayGroud"
+layout: default
+title: Code PlayGroud
 permalink: /playground/index/
 author_profile: true
 ---
