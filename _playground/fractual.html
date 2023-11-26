@@ -1,0 +1,52 @@
+---
+layout: splash
+title: "Code PlayGroud"
+permalink: /playground/fractual.html
+author_profile: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <canvas height="900" width="1200"></canvas>
+</body>
+<script>
+    cx = document.querySelector('canvas').getContext("2d");
+
+    function drawFractual(x, y, initialLength = 60, scale = .9) {
+        cx.translate(x, y);
+        cx.lineWidth = 1;
+
+        function draw(length) {
+
+            if (length < 10) return;
+            for (let angle of [-Math.PI / 10, Math.PI / 10]) {
+                cx.save()
+                cx.fillRect(0, 0, length, 1);
+                
+                cx.translate(length, 0)
+                cx.rotate(angle)
+
+                draw(length * scale)
+                cx.restore()
+            }
+        }
+
+        draw(initialLength)
+        cx.stroke()
+
+
+    }
+    drawFractual(500, 500, 100, .85)
+
+
+</script>
+
+</html>
