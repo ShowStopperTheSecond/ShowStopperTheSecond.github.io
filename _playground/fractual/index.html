@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<canvas height="900" width="1200"></canvas>
+<script>
+    cx = document.querySelector('canvas').getContext("2d");
+     cx.fillStyle = "yellow";
+    function drawFractual(x, y, initialLength = 60, scale = .9) {
+        cx.translate(x, y);
+        cx.lineWidth = 1;
+
+
+        function draw(length) {
+
+            if (length < 10) return;
+            for (let angle of [-Math.PI / 10, Math.PI / 10]) {
+                cx.save()
+                cx.fillRect(0, 0, length, 1);
+                
+                cx.translate(length, 0)
+                cx.rotate(angle)
+
+                draw(length * scale)
+                cx.restore()
+            }
+        }
+        draw(initialLength)
+        cx.stroke()
+    }
+    drawFractual(500, 500, 100, .85)
+</script>

@@ -1,10 +1,8 @@
 ---
-layout: splash
+layout: archive
 title: "Code PlayGroud"
 permalink: /playground/
 author_profile: true
 ---
 
-Beautiful Fractual
----
-Drawing on canvas [here](/playground/fractual.html)
+<ul><a href="{{ site.baseurl }}/_playground/fractual/index.html">Beautiful fractual</a></ul>
