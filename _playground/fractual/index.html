@@ -2,31 +2,112 @@
 layout: default
 ---
 
-<canvas height="900" width="1200"></canvas>
+<head>
+    <style>
+        canvas {
+            margin-left: 10%;
+            margin-top: 5%;
+            width: max-content;
+            height: max-content;
+        }
+
+        #settings {
+
+            display: grid;
+            grid-template-columns: repeat(1, 5);
+            /* Adjust the number of columns as needed */
+            gap: 10px;
+            /* Adjust the gap between items as needed */
+            position: absolute;
+            margin-top: 5%;
+            padding: 5px;
+            right: 3%;
+            height: auto;
+            width: auto;
+            border-style: solid;
+            border-width: 10px;
+            border-color: black;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #button {
+            position: absolute;
+        
+
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+
+
+<div id="settings">
+
+
+    <label for="initialSize">Initial Size:</label> <input type="range"  min="10" id="initialSize">
+    <label for="downscalingFactor">Down Scaling Factor:</label> <input type="number" value="0.85" min="0.2" max="1.0"
+        step=".05" id="downscalingFactor">
+    <label for="numberOfIterations">Number of Iterations:</label> <input type="number" value="10" min="5" max="15"
+        id="numberOfIterations">
+    <label for="angle">Angle:</label> <input type="number" value="0.5" min="0.1" max="7" step=".05"
+        id="angle">
+    <label for="color">Color:</label> <input type="color" value="#0000ff" id="color">
+    <button id="apply">Apply</button>
+
+
+</div>
+<canvas></canvas>
 <script>
-    cx = document.querySelector('canvas').getContext("2d");
-     cx.fillStyle = "yellow";
-    function drawFractual(x, y, initialLength = 60, scale = .9) {
+    let canvas = document.querySelector('canvas');
+    canvas.width = window.innerWidth * .7
+    canvas.height = window.innerHeight * .7
+    let cx = canvas.getContext("2d");
+
+    function drawFractual(x, y, initialLength = 60, scale = .9, maxIteration, color, turnAngle) {
+        cx.reset()
+        cx.fillStyle = color;
         cx.translate(x, y);
         cx.lineWidth = 1;
-
-
-        function draw(length) {
-
-            if (length < 10) return;
-            for (let angle of [-Math.PI / 10, Math.PI / 10]) {
+        for (let angle of [color, turnAngle]){
+            console.log(angle)
+        }
+        function draw(length, iteration) {
+            if (iteration > maxIteration) return;
+            for (let angle of [-turnAngle, turnAngle]) {
                 cx.save()
                 cx.fillRect(0, 0, length, 1);
-                
                 cx.translate(length, 0)
                 cx.rotate(angle)
-
-                draw(length * scale)
+                draw(length * scale, iteration + 1)
                 cx.restore()
             }
         }
-        draw(initialLength)
+        draw(initialLength, 0)
         cx.stroke()
     }
-    drawFractual(500, 500, 100, .85)
+    let initialSizeReader = document.querySelector("#initialSize")
+    let downScalingFactorReader = document.querySelector("#downscalingFactor")
+    let numberOfIterationsReader = document.querySelector("#numberOfIterations")
+    let colorReader = document.querySelector("#color")
+    let angleReader = document.querySelector("#angle")
+    let apply = document.querySelector("#apply")
+
+    initialSizeReader.value = window.innerWidth*.04
+    apply.addEventListener("click", () => {
+        drawFractual(window.innerWidth * .1, window.innerHeight * .36, initialSizeReader.value,
+        downScalingFactorReader.value, numberOfIterationsReader.value,colorReader.value, angleReader.value)    })
+
+        drawFractual(window.innerWidth * .1, window.innerHeight * .36, initialSizeReader.value,
+        downScalingFactorReader.value, numberOfIterationsReader.value,colorReader.value, angleReader.value)
+
+    
+   
 </script>

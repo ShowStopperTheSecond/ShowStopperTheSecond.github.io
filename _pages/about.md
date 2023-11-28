@@ -16,4 +16,4 @@ Beyond academia, you'll find me immersed in diverse interests — from indulging
 Despite being between professional endeavors, my passion for problem-solving remains steadfast. Proficient in various programming languages and algorithms, my forte lies in computer vision, where I've honed my skills in manipulating digital images.
 
 
-Looking ahead, my aspirations coalesce into a clear vision — a Ph.D. in AI, a stepping stone toward a mission of using technology to enhance human well-being. My mission is clear: to contribute to a healthier, longer, and happier life for all. In the near future, you'll find me embarking on this academic pursuit.
+Looking ahead, my aspirations coalesce into a clear vision — a Ph.D. in AI, a stepping stone toward a mission of using technology to enhance human well-being. My mission is clear: to contribute to a healthier, longer (especially longer), and happier life for all. In the near future, you'll find me embarking on this academic pursuit.
