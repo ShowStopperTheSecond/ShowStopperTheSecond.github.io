@@ -99,6 +99,10 @@ layout: default
                 right: 35px;
             }
         }
+
+    #content{
+        align-items: center;
+    }
     </style>
 
 </head>
@@ -125,13 +129,15 @@ layout: default
             <button id="apply">Apply</button>
     </div>
 </div>
-
+<div id="content">
+<p>Click to open setting</p>
 <canvas></canvas>
+</div>
 
 <script>
     let canvas = document.querySelector('canvas');
-    canvas.width = window.innerWidth * .7
-    canvas.height = window.innerHeight * .7
+    canvas.width = window.innerWidth *.9
+    canvas.height = window.innerHeight *.9
     let cx = canvas.getContext("2d");
 
     function drawFractual(x, y, initialLength = 60, scale = .9, maxIteration, color, turnAngle) {
