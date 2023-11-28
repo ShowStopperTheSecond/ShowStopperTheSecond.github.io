@@ -299,7 +299,7 @@
     let angleReader = document.querySelector("#angle")
     let apply = document.querySelector("#apply")
 
-    initialSizeReader.value = window.innerWidth * .11
+    initialSizeReader.value = window.innerHeight * .05
     apply.addEventListener("click", () => {
         drawFractual(window.innerWidth * .1, window.innerHeight * .36, initialSizeReader.value,
             downScalingFactorReader.value, numberOfIterationsReader.value, colorReader.value, angleReader.value)
