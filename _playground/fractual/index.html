@@ -4,6 +4,10 @@ layout: default
 
 <head>
     <style>
+        body {
+            justify-content: center;
+        }
+
         canvas {
             margin-left: 10%;
             margin-top: 5%;
@@ -11,31 +15,8 @@ layout: default
             height: max-content;
         }
 
-        #settings {
-
-            display: grid;
-            grid-template-columns: repeat(1, 5);
-            /* Adjust the number of columns as needed */
-            gap: 10px;
-            /* Adjust the gap between items as needed */
-            position: absolute;
-            margin-top: 5%;
-            padding: 5px;
-            right: 3%;
-            height: auto;
-            width: auto;
-            border-style: solid;
-            border-width: 10px;
-            border-color: black;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
         #button {
             position: absolute;
-        
-
             padding: 10px;
             background-color: #4CAF50;
             color: white;
@@ -43,28 +24,110 @@ layout: default
             border-radius: 5px;
             cursor: pointer;
         }
+
+        /* The Overlay (background) */
+        .overlay {
+            /* Height & width depends on how you want to reveal the overlay (see JS below) */
+            height: 100%;
+            width: 0;
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+      
+            
+            background-color: rgb(0, 0, 0);
+            /* Black fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/opacity */
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+        }
+
+        /* Position the content inside the overlay */
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            /* 25% from the top */
+            width: 100%;
+            /* 100% width */
+            text-align: center;
+            /* Centered text/links */
+            margin-top: 30px;
+            /* 30px top margin to avoid conflict with the close button on smaller screens */
+        }
+
+        /* The navigation links inside the overlay */
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            /* Display block instead of inline */
+            transition: 0.3s;
+            /* Transition effects on hover (color) */
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        /* Position the close button (top right corner) */
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
     </style>
 
 </head>
 
 
 
-<div id="settings">
 
 
-    <label for="initialSize">Initial Size:</label> <input type="range"  min="10" id="initialSize">
-    <label for="downscalingFactor">Down Scaling Factor:</label> <input type="number" value="0.85" min="0.2" max="1.0"
-        step=".05" id="downscalingFactor">
-    <label for="numberOfIterations">Number of Iterations:</label> <input type="number" value="10" min="5" max="15"
-        id="numberOfIterations">
-    <label for="angle">Angle:</label> <input type="number" value="0.5" min="0.1" max="7" step=".05"
-        id="angle">
-    <label for="color">Color:</label> <input type="color" value="#0000ff" id="color">
-    <button id="apply">Apply</button>
-
-
+<div class="overlay-content">
 </div>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+            <label for="initialSize">Initial Size:</label> <input type="range" min="10" id="initialSize">
+            <label for="downscalingFactor">Down Scaling Factor:</label> <input type="number" value="0.85" min="0.2"
+                max="1.0" step=".05" id="downscalingFactor">
+            <label for="numberOfIterations">Number of Iterations:</label> <input type="number" value="10" min="5"
+                max="15" id="numberOfIterations">
+            <label for="angle">Angle:</label> <input type="number" value="0.5" min="0.1" max="7" step=".05" id="angle">
+            <label for="color">Color:</label> <input type="color" value="#0000ff" id="color">
+            <button id="apply">Apply</button>
+    </div>
+</div>
+
 <canvas></canvas>
+
 <script>
     let canvas = document.querySelector('canvas');
     canvas.width = window.innerWidth * .7
@@ -76,7 +139,7 @@ layout: default
         cx.fillStyle = color;
         cx.translate(x, y);
         cx.lineWidth = 1;
-        for (let angle of [color, turnAngle]){
+        for (let angle of [color, turnAngle]) {
             console.log(angle)
         }
         function draw(length, iteration) {
@@ -100,14 +163,27 @@ layout: default
     let angleReader = document.querySelector("#angle")
     let apply = document.querySelector("#apply")
 
-    initialSizeReader.value = window.innerWidth*.04
+    initialSizeReader.value = window.innerWidth * .11
     apply.addEventListener("click", () => {
         drawFractual(window.innerWidth * .1, window.innerHeight * .36, initialSizeReader.value,
-        downScalingFactorReader.value, numberOfIterationsReader.value,colorReader.value, angleReader.value)    })
+            downScalingFactorReader.value, numberOfIterationsReader.value, colorReader.value, angleReader.value)
+            closeNav()
+    })
 
-        drawFractual(window.innerWidth * .1, window.innerHeight * .36, initialSizeReader.value,
-        downScalingFactorReader.value, numberOfIterationsReader.value,colorReader.value, angleReader.value)
+    drawFractual(window.innerWidth * .1, window.innerHeight * .36, initialSizeReader.value,
+        downScalingFactorReader.value, numberOfIterationsReader.value, colorReader.value, angleReader.value)
 
-    
-   
+
+    /* Open when someone clicks on the span element */
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+
+    canvas.addEventListener("click", openNav)
 </script>
