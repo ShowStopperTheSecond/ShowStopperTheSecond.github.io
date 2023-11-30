@@ -1,0 +1,111 @@
+---
+layout: default
+---
+
+<head>
+    <style>
+        #content {
+            display: grid;
+            margin-top: 10%;
+            gap: 10px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        input {
+            text-align: center;
+
+        }
+
+        #output-textarea {
+            justify-content: center;
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<div id="content">
+    <label for="letters">Letters (without space):</label><input id="letters" value="ShowStopperTheSecond"
+        placeholder="Letters here..." type="text">
+    <label for="Length">Length</label> <input id="Length" min="3" value="8" max="15" type="number">
+    <label for="dictionary">Dictionary</label>
+    <select id="dictionary" name="Dictionaries">
+        <option value="wlist_match11">wlist_match11</option>
+        <option value="wordlist">wordlist</option>
+        <option value="words_alpha">words_alpha</option>
+        <option value="words">words</option>
+    </select>
+    <button id="find">Find</button>
+    <label for="output-textarea">Output:</label>
+    <textarea id="output-textarea" readonly></textarea>
+
+</div>
+<script>
+
+
+
+
+    let letters = new Set(document.querySelector("#letters").value.toLowerCase())
+    let length = document.querySelector("#Length").value
+    let dictionaryName = document.querySelector("#dictionary")
+    let find = document.querySelector("#find")
+    let output = document.querySelector("#output-textarea")
+    let dictionary = []
+
+
+    function loadDictionary() {
+        fetch("/_playground/wordiFinder/DataSet/" + dictionaryName.value + ".txt")
+            .then((res) => res.text())
+            .then((content) => {
+                for (let line of content.replaceAll("\r", "").split("\n")) {
+                    let l = new Set(line)
+                    dictionary.push({ l: l, word: line })
+                }
+            })
+    }
+    dictionaryName.addEventListener("change", () => {
+        dictionary = [];
+        loadDictionary()
+
+    })
+    loadDictionary()
+    document.querySelector("#letters").addEventListener("change", () => {
+        letters = new Set(document.querySelector("#letters").value)
+    })
+
+
+    function isSubset(set1, set2) {
+        // Check if every element in set1 is also in set2
+        for (let element of set1) {
+            if (!set2.has(element)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    find.addEventListener("click", () => {
+        letters = new Set(document.querySelector("#letters").value.toLowerCase())
+        length = document.querySelector("#Length").value
+        output.value = ""
+        for (let { l, word } of dictionary) {
+            if (isSubset(l, letters) && word.length == length) {
+                output.value += word + ", "
+            }
+        }
+    })
+
+
+
+
+
+
+
+
+</script>

@@ -143,7 +143,7 @@
         body {
             justify-content: center;
         }
-
+        
         canvas {
             margin-left: 10%;
             margin-top: 5%;
@@ -228,7 +228,6 @@
             .overlay a {
                 font-size: 20px
             }
-
             .overlay .closebtn {
                 font-size: 40px;
                 top: 15px;
@@ -245,10 +244,6 @@
     </style>
 
 </head>
-
-
-
-
 
 <div class="overlay-content">
 </div>
@@ -318,16 +313,14 @@
     drawFractual(window.innerWidth * .1, window.innerHeight * .36, initialSizeReader.value,
         downScalingFactorReader.value, numberOfIterationsReader.value, colorReader.value, angleReader.value)
 
-
-    /* Open when someone clicks on the span element */
     function openNav() {
         document.getElementById("myNav").style.width = "100%";
     }
 
-    /* Close when someone clicks on the "x" symbol inside the overlay */
     function closeNav() {
         document.getElementById("myNav").style.width = "0%";
     }
+
     canvas.addEventListener("click", openNav)
 </script>
     </div>
