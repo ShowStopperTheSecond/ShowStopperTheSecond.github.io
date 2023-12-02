@@ -326,6 +326,7 @@
 
 
     function iterate(state, kill, killNot, revive) {
+        newState=structuredClone(state)
         for (let i = 1; i < mCell - 1; i++) {
             for (let j = 1; j < nCell - 1; j++) {
                 let neighborCells = state[i - 1][j - 1] + state[i - 1][j] +
@@ -337,14 +338,14 @@
                     if (kill.includes(neighborCells)) {
                         // console.log("kill Ran")
                         //console.log("killed")
-                        state[i][j] = false
+                        newState[i][j] = false
                     }
                 }
                 if (killNot) {
                     if (!killNot.includes(neighborCells)) {
                         // console.log("kill Ran")
                         //console.log("killed")
-                        state[i][j] = false
+                        newState[i][j] = false
                     }
 
                 }
@@ -352,14 +353,14 @@
                 if (revive) {
                     // console.log("Revive Ran")
                     if (revive.includes(neighborCells)) {
-                        state[i][j] = true
+                        newState[i][j] = true
                     }
                 }
 
             }
 
         }
-        return state;
+        return newState;
     }
 
 
