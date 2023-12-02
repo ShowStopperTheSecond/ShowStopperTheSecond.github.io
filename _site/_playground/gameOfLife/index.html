@@ -1,0 +1,486 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>ShowStopperTheSecond</title>
+<meta name="description" content="Javid Norouzi">
+
+
+  <meta name="author" content="Javid Norouzi">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="ShowStopperTheSecond">
+<meta property="og:title" content="ShowStopperTheSecond">
+<meta property="og:url" content="http://localhost:4000/_playground/gameOfLife/">
+
+
+  <meta property="og:description" content="Javid Norouzi">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/_playground/gameOfLife/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Javid Norouzi",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="ShowStopperTheSecond Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          ShowStopperTheSecond
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/playground/">Code PlayGround</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contacts/">Contacts</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <head>
+    <style>
+        body {
+            justify-content: center;
+            justify-items: center;
+
+        }
+
+        canvas {
+            display: block;
+            margin: auto;
+            margin-top: 5%;
+            width: max-content;
+            height: max-content;
+        }
+
+        #button {
+            position: absolute;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* The Overlay (background) */
+        .overlay {
+            /* Height & width depends on how you want to reveal the overlay (see JS below) */
+            height: 100%;
+            width: 0;
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+
+
+            background-color: rgb(0, 0, 0);
+            /* Black fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/opacity */
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+        }
+
+        /* Position the content inside the overlay */
+        .overlay-content {
+            position: relative;
+            top: 10%;
+            /* 25% from the top */
+            width: 100%;
+            /* 100% width */
+            text-align: center;
+            /* Centered text/links */
+            margin-top: 30px;
+            /* 30px top margin to avoid conflict with the close button on smaller screens */
+        }
+
+        /* The navigation links inside the overlay */
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            /* Display block instead of inline */
+            transition: 0.3s;
+            /* Transition effects on hover (color) */
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        /* Position the close button (top right corner) */
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+
+        input {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<div class="overlay-content">
+</div>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <label for="cellWidth">Cell Width:</label> <input type="number" value="10" min="3" id="cellWidth">
+        <label for="livingProbability">Initial Living Probability:</label> <input type="range" value=".5" min="0"
+            max="1" step="0.1" id="livingProbability">
+        <label for="speed">Time Interval</label> <input type="number" value="500" min="500" max="4000" step="100" id="speed">
+        <label for="kill">Kill if number of neighbors is:</label> <input value="4" type="input" id="kill">
+        <label for="killNot">Kill if number of neighbors is not:</label> <input value="3" type="input" id="killNot">
+        <label for="revive">Revive if number of neighbors is:</label> <input value="3" type="input" id="revive">
+        <label for="color">Color:</label> <input type="color" value="#0000FF" id="color">
+        <button id="apply">Apply</button>
+        <button id="newRandomState">New Random State</button>
+
+    </div>
+</div>
+<div id="content">
+    <p>Click to open setting</p>
+    <canvas></canvas>
+</div>
+
+<script>
+    let canvas = document.querySelector('canvas');
+    canvas.width = window.innerWidth * .9
+    canvas.height = window.innerHeight * .9
+    let cx = canvas.getContext("2d");
+    let cellWidthReader = document.querySelector("#cellWidth")
+    let speedReader = document.querySelector("#speed")
+    let killReader = document.querySelector("#kill")
+    let killNotReader = document.querySelector("#killNot")
+    let reviveReader = document.querySelector("#revive")
+    let colorReader = document.querySelector("#color")
+    let apply = document.querySelector("#apply")
+    let newRandomState = document.querySelector("#newRandomState")
+
+    let livingProbabilityReader = document.querySelector("#livingProbability")
+    let cellWidth = cellWidthReader.value
+    let globalState
+    let mCell = Math.floor(canvas.width / cellWidth)
+    let nCell = Math.floor(canvas.height / cellWidth)
+    let timeIntervalID
+
+    function randomState(p = 0.5) {
+        let state = []
+        for (let m = 0; m < mCell; m++) {
+            let currentRow = []
+            for (let n = 0; n < nCell; n++) {
+                currentRow.push(Math.random() > p)
+            }
+            state.push(currentRow)
+        }
+        return state;
+    }
+    function drawCurrentState(states, cellWidth = 10, color = "blue") {
+        //console.log("dtawn")
+        cx.reset()
+        for (let m = 0; m < mCell; m++) {
+            for (let n = 0; n < nCell; n++) {
+                cx.fillRect(m * cellWidth, n * cellWidth, cellWidth, cellWidth)
+                if (states[m][n] == true) {
+                    cx.fillStyle = color
+                } else {
+                    cx.fillStyle = "white";
+                }
+            }
+            cx.stroke()
+        }
+    }
+
+
+    function iterate(state, kill, killNot, revive) {
+        for (let i = 1; i < mCell - 1; i++) {
+            for (let j = 1; j < nCell - 1; j++) {
+                let neighborCells = state[i - 1][j - 1] + state[i - 1][j] +
+                    state[i][j - 1] + state[i + 1][j - 1] +
+                    state[i - 1][j + 1] + state[i][j + 1] +
+                    state[i + 1][j] + state[i + 1][j + 1]
+                //console.log(neighborCells, kill)
+                if (kill) {
+                    if (kill.includes(neighborCells)) {
+                        // console.log("kill Ran")
+                        //console.log("killed")
+                        state[i][j] = false
+                    }
+                }
+                if (killNot) {
+                    if (!killNot.includes(neighborCells)) {
+                        // console.log("kill Ran")
+                        //console.log("killed")
+                        state[i][j] = false
+                    }
+
+                }
+
+                if (revive) {
+                    // console.log("Revive Ran")
+                    if (revive.includes(neighborCells)) {
+                        state[i][j] = true
+                    }
+                }
+
+            }
+
+        }
+        return state;
+    }
+
+
+
+    function start() {
+        cellWidth = cellWidthReader.value
+        mCell = Math.floor(canvas.width / cellWidth)
+        nCell = Math.floor(canvas.height / cellWidth)
+        let kill = killReader.value.split("").map(e => Number(e))
+        kill = kill == [] ? NaN : kill
+        console.log(kill)
+        let killNot = killNotReader.value.split("").map(e => Number(e))
+        killNot = killNot == [] ? NaN : killNot
+        console.log(killNot)
+        let revive = reviveReader.value.split("").map(e => Number(e))
+        revive = revive == [] ? NaN : revive
+        console.log(revive)
+
+
+        let color = colorReader.value
+
+        timeIntervalID = setInterval(() => {
+            globalState = iterate(globalState, kill, killNot, revive)
+            drawCurrentState(globalState, cellWidth, color)
+
+        }, speedReader.value)
+
+
+
+    }
+    start()
+    let p = livingProbabilityReader.value
+    globalState = randomState(p)
+
+
+
+    newRandomState.addEventListener("click", () => {
+        let p = livingProbabilityReader.value
+        globalState = randomState(p)
+        cellWidth = cellWidthReader.value
+        let color = colorReader.value
+        console.log(color)
+        drawCurrentState(globalState, cellWidth, color)
+        closeNav()
+    })
+    apply.addEventListener("click", () => {
+        clearInterval(timeIntervalID)
+        start()
+        closeNav()
+    })
+
+
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+    canvas.addEventListener("click", openNav)
+</script>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/ShowStopperTheSecond" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/javid-norouzi/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Javid Norouzi. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

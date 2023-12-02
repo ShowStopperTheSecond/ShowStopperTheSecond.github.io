@@ -42,10 +42,16 @@
 <loc>http://localhost:4000/_playground/fractual/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/_playground/gameOfLife/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/_playground/wordiFinder/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/playground/index/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/playground/index/</loc>
