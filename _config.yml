@@ -110,18 +110,10 @@ author:
   location         : 
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:norouzi.javid@protonmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "ShowStopperTheSecond.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-google"
+      url: "https://scholar.google.com/citations?user=JWEGbM0AAAAJ&hl=en&oi=ao"
+
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ShowStopperTheSecond"
@@ -140,6 +132,21 @@ author:
     - label: "Kaggle"
       icon: "fab fa-fw fa-kaggle"
       url: "https://kaggle.com/javidtheimmortal"
+
+
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:norouzi.javid@protonmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "ShowStopperTheSecond.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+   
 
 
 
