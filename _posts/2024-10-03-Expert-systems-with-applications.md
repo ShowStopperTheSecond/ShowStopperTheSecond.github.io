@@ -14,7 +14,7 @@ tags:
 ---
 
 
-[A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration](https://www.sciencedirect.com/science/article/abs/pii/S0957417424011576)
+<!-- [A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration](https://www.sciencedirect.com/science/article/abs/pii/S0957417424011576) -->
 
 
 Synthetic aperture radar (SAR) images have found increasing attention in various applications, such as remote
@@ -36,7 +36,7 @@ results.
 
 
 
-{% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/Methodology.png" alt="Scheme" caption="Scheme" %}
+<!-- {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/Methodology.png" alt="Scheme" caption="Scheme" %}
 
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/CoarseRegistration.png" alt="Coarse Registration" caption="Coarse Registration" %}
 
@@ -47,3 +47,4 @@ results.
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/PatchBasedMatching.png" alt="Patch-based Matching in Fine Stage" caption="Patch-based Matching in Fine Stage" %}
 
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/Results.png" alt="Results" caption="Comparisons" %}
+ -->
