@@ -1,6 +1,5 @@
 ---
-title: "A deep-based approach for multi-descriptor feature extraction: Applications
-on SAR image registration" 
+title: "A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration" 
 date: 2024-10-03
 permalink: /posts/2024/10/Expert-systems-with-applications-2024/
 tags:
