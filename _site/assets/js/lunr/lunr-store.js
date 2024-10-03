@@ -46,4 +46,10 @@ var store = [{
         "tags": ["Deep Learning","Feature Detection","Feature Description","Feature Matching"],
         "url": "/posts/2024/10/Knowledge-based-systems-2024/",
         "teaser": null
+      },{
+        "title": "The Weight of Existence",
+        "excerpt":"It’s a heavy burden, this existence. Like carrying a world on one’s shoulders, day after day. The weight of it presses down, a constant reminder of the finite nature of life. Each breath is a borrowed moment, a fleeting respite from the inevitable. Loneliness, a cold companion, creeps into the...","categories": [],
+        "tags": ["Existence","Void"],
+        "url": "/posts/2024/10/The-Weight-of-Existence/",
+        "teaser": null
       }]
