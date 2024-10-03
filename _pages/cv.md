@@ -29,13 +29,23 @@ Research Interests
 
 Publications
 =========
-* <small>Javid Norouzi, Mohammad Sadegh Helfroush, Alireza Liaghat, and Habibollah Danyali. ” A Deep Learning Based Two-Stage Approach for Multi-Descriptor Feature Extraction and Matching of SAR Images: Applications on ImageRegistration (Under Review).”Expert Systems With Applications </small>
+* <small>N. Heydari, J. Norouzi, M.S. Helfroush, and H. Danyali. ”Dynamic Hand Gesture Recognition with 2DCNN-LSTM and Improved Keyframe Extraction” ICCKE2024 (Under Review) </small>
 
-* <small>Alireza Liaghat, Mohammad Sadegh Helfroush, Javid Norouzi, and Habibollah Danyali. ”Airborne SAR to Optical Image Registration Based on SAR Geo-Referencing and Deep Learning Approach.” IEEE Sensors Journal (2023).</small>
+* <small>J. Norouzi, M.S. Helfroush, A. Liaghat, and H. Danyali. ”Beyond Outlier Removal: Integrated Ensemble Matching for Accurate Image Keypoint Correspondence” in Knowledge-Based Systems (Under Review)</small>
 
-* <small>Javid Norouzi, Alireza Liaghat, Mohammad Sadegh Helfroush, and Habibollah Danyali. ”VGG16-based Feature Fusion For Image Kyepoint Description (In Press)” In 2023 31st International Conference on Electrical Engineering</small>
+* <small>A. Liaghat, M.S. Helfroush, J. Norouzi and H. Danyali. ”OS-CycleGAN: Modified CycleGAN-based Descriptors for Optical and SAR Image Matching” in IEEE Transactions on Geoscience and Remote Sensing (Under Review)</small>
 
-* <small>Javid Norouzi, Alireza Liaghat, Mohammad Sadegh Helfroush, and Habibollah Danyali. ”A Novel Deep Learning Framework For Image KeyPoint Description.” In 2022 12th International Conference on Computer and Knowledge Engineering (ICCKE), pp. 332-336. IEEE, 2022.</small>
+* <small>J. Norouzi, M.S. Helfroush, A. Liaghat, and H. Danyali. ”A Deep-Based Approach for Multi-Descriptor Feature Extraction:Applications on SAR Image Registration” Expert Systems With Applications 2024 Nov 15;254:124291</small>
+
+* <small>J. Norouzi, M.S. Helfroush, A. Liaghat, and H. Danyali. ”Robust Feature-Based Image Matching Through Dual Descriptors (Presented Orally). 2024 International Conference on Advanced Technology (ICAT) ”</small>
+
+* <small>A. Liaghat, M.S. Helfroush, J. Norouzi, and H. Danyali. ”Airborne SAR to Optical Image Registration Based on SAR Georeferencing and Deep Learning Approach,” in IEEE Sensors Journal, vol. 23, no. 21, pp. 26446-26458, 1 Nov.1, 2023, doi: 10.1109/JSEN.2023.3314608.</small>
+
+* <small>J. Norouzi, A. Liaghat, M.S. Helfroush, and H. Danyali. ”VGG16-based Feature Fusion For Image Kyepoint Description,” 2023 31st International Conference on Electrical Engineering (ICEE), Tehran, Iran, Islamic Republic of, 2023, pp. 1005-1009, doi: 10.1109/ICEE59167.2023.10334668.</small>
+
+
+* <small>J. Norouzi, A. Liaghat, M.S. Helfroush, and H. Danyali. ”A Novel Deep Learning Framework For Image KeyPoint Description,” 2022 12th International Conference on Computer and Knowledge Engineering (ICCKE), Mashhad, Iran, Islamic Republic of, 2022, pp. 332-336, doi: 10.1109/ICCKE57176.2022.9960057.</small>
+
 
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
@@ -59,6 +69,10 @@ Technical Skills
 
 Selected Projects
 ======
+* Lactic Acid Threshold Detection via Breathing Pattern
+  * <small>Developed a method to identify the ventilatory threshold using audio-recorded breathing signals. This technique is particularly valuable in fitness and training applications, enabling athletes to determine if they have reached their optimal workout intensity. </small>
+
+
 * Quadratic Mirror Filter Bank Demo
   * <small>A graphical interface for applying filters to discrete signals in real time in C++. A quadratic mirror filter bank wasused, and the graphical interface was implemented using Qt and QML. This project was a part of the ADSP course. github.com/ShowStopperTheSecond/QMFB </small>
 
