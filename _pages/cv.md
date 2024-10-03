@@ -13,7 +13,7 @@ author_profile: true
 
 Education
 ======
-* M.Sc. in Communications Engineering (Systems), Shiraz University of Technology, 2022
+* M.Sc. in Electrical Engineering (Communication Systems), Shiraz University of Technology, 2022
 * B.S. in Electrical Engineering, University of Birjand, 2019
 
 Research Interests
