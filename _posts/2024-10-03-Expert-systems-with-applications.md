@@ -10,7 +10,6 @@ tags:
   - Deep Learning
   - Feature Detection
   - Feature Description
-
 ---
 
 
