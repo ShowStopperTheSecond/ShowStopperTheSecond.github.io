@@ -2,7 +2,7 @@
 title: "A deep-based approach for multi-descriptor feature extraction: Applications
 on SAR image registration" 
 date: 2024-10-03
-permalink: /posts/2022/03/Expert-systems-with-applications-2024/
+permalink: /posts/2024/10/Expert-systems-with-applications-2024/
 tags:
   - Image Registration
   - SAR
@@ -13,6 +13,8 @@ tags:
 
 ---
 
+
+[A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration](https://www.sciencedirect.com/science/article/abs/pii/S0957417424011576)
 
 
 Synthetic aperture radar (SAR) images have found increasing attention in various applications, such as remote
@@ -32,14 +34,16 @@ the percentage of correct matches, while achieving comparable or even better roo
 results.
 
 
-Here is the link:
-[Expert Systems With Applications](https://www.sciencedirect.com/science/article/abs/pii/S0957417424011576)
-
 
 
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/Methodology.png" alt="Scheme" caption="Scheme" %}
+
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/CoarseRegistration.png" alt="Coarse Registration" caption="Coarse Registration" %}
+
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/FineRegistration.png" alt="Fine Registration" caption=""Fine Registration"" %}
+
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/FeatureMatchingFineStage.png" alt="Feature Matching in Fine Stage" caption="Feature Matching in Fine Stage" %}
+
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/PatchBasedMatching.png" alt="Patch-based Matching in Fine Stage" caption="Patch-based Matching in Fine Stage" %}
+
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/Results.png" alt="Results" caption="Comparisons" %}
