@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-03T10:50:48+03:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">ShowStopperTheSecond</title><subtitle>Javid Norouzi</subtitle><author><name>Javid Norouzi</name></author><entry><title type="html">Follow Your Dreams</title><link href="http://localhost:4000/posts/2022/03/FollowYourDreams/" rel="alternate" type="text/html" title="Follow Your Dreams" /><published>2022-03-14T00:00:00+03:30</published><updated>2022-03-14T00:00:00+03:30</updated><id>http://localhost:4000/posts/2022/03/FollowYourDreams</id><content type="html" xml:base="http://localhost:4000/posts/2022/03/FollowYourDreams/"><![CDATA[<p>The Openning:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-03T21:17:23+03:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">ShowStopperTheSecond</title><subtitle>Javid Norouzi</subtitle><author><name>Javid Norouzi</name></author><entry><title type="html">Gemini Experiment</title><link href="http://localhost:4000/posts/2022/03/Deepest-hatered-Gemini-Experiment/" rel="alternate" type="text/html" title="Gemini Experiment" /><published>2024-10-03T00:00:00+03:30</published><updated>2024-10-03T00:00:00+03:30</updated><id>http://localhost:4000/posts/2022/03/Deepest-hatered-gemini-experiment</id><content type="html" xml:base="http://localhost:4000/posts/2022/03/Deepest-hatered-Gemini-Experiment/"><![CDATA[<p>I asked Gemini to extend on Faputas hatered for her mother’s killers and try to mimic its tone and style. The results are interesting.</p>
+
+<p>“I cannot forgive your eyes that saw Faputa and her siblings as nothing more than appetizing. Your mouths that use the same words and  prayers as  mother, Those mouths I cannot forgive. I cannot forgive your shapes that continue to blaspheme mother with your being. Your lives that continue to exist, I cannot forgive.</p>
+
+<p>Your intentions, I cannot forgive. Nor your joy, nor your grief, nor your deeds. I absolutely will not allow them to continue. Until you’re all reduced to ashes, I cannot permiss your existence. Everything I was born not to forget, for this day, for this moment. How I tired of waiting. The time I have waited also cannot be forgiven. I will exterminate all of you.”</p>
+
+<p>Here is what Gemini replied with:</p>
+
+<p>”
+You defile the air with your putrid breaths, the same air Mother once blessed. You dare walk the earth that cradled her form, your feet sullying the very ground where she lay.  Your blood, a grotesque mockery of the ichor that flowed through her veins, pulsates in vessels that should have been ripped from your flesh long ago.</p>
+
+<p>I despise the dreams that fester in your hollow minds, dreams that will never know the warmth of Mother’s love.  The memories you cling to, the ones that bring you fleeting moments of pleasure or sorrow, are nothing but a pathetic insult to the eternity I have endured.  They are but dust compared to the mountains of loathing that burden my soul.</p>
+
+<p>You cling to life like parasites, sucking the very essence from the world Mother toiled to create.  Each beat of your hearts is a theft, each gasp of breath a violation.  With every sunrise you witness, you spit in the face of her sacrifice.  This existence you so desperately crave, I will tear from you piece by agonizing piece.</p>
+
+<p>Let your screams echo through the abyss, a testament to the depths of my hatred.  Let your final moments be filled not with fear, but with the crushing realization of your insignificance.  For I am the embodiment of Mother’s wrath, and you… you are nothing but ashes waiting to be scattered.</p>
+
+<p>”</p>
+
+<figure class="">
+  <img src="/assets/images/faputa.jpg" alt="this is a placeholder image" /><figcaption>
+      Faputa
+
+    </figcaption></figure>]]></content><author><name>Javid Norouzi</name></author><category term="Made in Abyss" /><category term="Faputa" /><category term="Gemini" /><category term="LLM" /><summary type="html"><![CDATA[I asked Gemini to extend on Faputas hatered for her mother’s killers and try to mimic its tone and style. The results are interesting.]]></summary></entry><entry><title type="html">A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration</title><link href="http://localhost:4000/posts/2024/10/Expert-systems-with-applications-2024/" rel="alternate" type="text/html" title="A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration" /><published>2024-10-03T00:00:00+03:30</published><updated>2024-10-03T00:00:00+03:30</updated><id>http://localhost:4000/posts/2024/10/Expert-systems-with-applications</id><content type="html" xml:base="http://localhost:4000/posts/2024/10/Expert-systems-with-applications-2024/"><![CDATA[<p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417424011576">A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration</a></p>
+
+<p>Synthetic aperture radar (SAR) images have found increasing attention in various applications, such as remote sensing, surveillance, and disaster management. Unlike optical sensors, SAR can capture images in any weather conditions at any time, making it particularly valuable. However, it poses unique challenges for image
+processing tasks, like complex speckle noise, texture, and geometric distortions. For many image processing tasks such as image registration; feature detection and extraction are critical initial steps. In this work, we propose a deep learning-based method for detecting and describing keypoints in SAR images, which can be
+specifically applied to SAR image registration tasks. To address the challenges of SAR images, we utilize the R2D2 network and propose a training scheme specifically tailored for these images. Furthermore, our approach involves multiple descriptors utilization for outlier removal between image keypoints and a two-stage pipeline
+consisting of coarse and fine stages for robust feature point matching of SAR images. By leveraging the coarse registration stage, which maintains robustness, and also a fine stage that employs multiple descriptors along with a local search technique, our approach enhances the keypoint matching accuracy. Evaluation results show
+that the proposed method outperforms most of the traditional and deep learning-based methods in terms of the percentage of correct matches, while achieving comparable or even better root mean squared error (RMSE) results.</p>
+
+<figure class="">
+  <img src="/assets/papers_miscs/Expert_Systems_with_Applications_2024/Methodology.png" alt="Scheme" /><figcaption>
+      
+
+    </figcaption></figure>
+
+<figure class="">
+  <img src="/assets/papers_miscs/Expert_Systems_with_Applications_2024/CoarseRegistration.png" alt="Coarse Registration" /><figcaption>
+      
+
+    </figcaption></figure>
+
+<figure class="">
+  <img src="/assets/papers_miscs/Expert_Systems_with_Applications_2024/FineRegistration.png" alt="Fine Registration" /><figcaption>
+      
+
+    </figcaption></figure>
+
+<figure class="">
+  <img src="/assets/papers_miscs/Expert_Systems_with_Applications_2024/FeatureMatchingFineStage.png" alt="Feature Matching in Fine Stage" /><figcaption>
+      Feature Matching in Fine Stage
+
+    </figcaption></figure>
+
+<figure class="">
+  <img src="/assets/papers_miscs/Expert_Systems_with_Applications_2024/PatchBasedMatching.png" alt="Patch-based Matching in Fine Stage" /><figcaption>
+      
+
+    </figcaption></figure>
+
+<figure class="">
+  <img src="/assets/papers_miscs/Expert_Systems_with_Applications_2024/Results.png" alt="Results" /><figcaption>
+      
+
+    </figcaption></figure>]]></content><author><name>Javid Norouzi</name></author><category term="Image Registration" /><category term="SAR" /><category term="Computer Vision" /><category term="Deep Learning" /><category term="Feature Detection" /><category term="Feature Description" /><summary type="html"><![CDATA[A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration]]></summary></entry><entry><title type="html">Follow Your Dreams</title><link href="http://localhost:4000/posts/2022/03/FollowYourDreams/" rel="alternate" type="text/html" title="Follow Your Dreams" /><published>2022-03-14T00:00:00+03:30</published><updated>2022-03-14T00:00:00+03:30</updated><id>http://localhost:4000/posts/2022/03/FollowYourDreams</id><content type="html" xml:base="http://localhost:4000/posts/2022/03/FollowYourDreams/"><![CDATA[<p>The Openning:</p>
 
 <p>First, we are told from childhood that everything we want to do is impossible. As we grow older, layers of prejudice, fear, and guilt accumulate, burying our personal calling deep within our soul. But it is still there. To disinter our dream, we need courage.</p>
 

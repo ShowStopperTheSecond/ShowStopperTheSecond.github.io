@@ -28,4 +28,16 @@ var store = [{
         "tags": ["Books","PauloCoelho","TheAlchemist"],
         "url": "/posts/2022/03/FollowYourDreams/",
         "teaser": null
+      },{
+        "title": "Gemini Experiment",
+        "excerpt":"I asked Gemini to extend on Faputas hatered for her mother’s killers and try to mimic its tone and style. The results are interesting. “I cannot forgive your eyes that saw Faputa and her siblings as nothing more than appetizing. Your mouths that use the same words and prayers as...","categories": [],
+        "tags": ["Made in Abyss","Faputa","Gemini","LLM"],
+        "url": "/posts/2022/03/Deepest-hatered-Gemini-Experiment/",
+        "teaser": null
+      },{
+        "title": "A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration",
+        "excerpt":"A deep-based approach for multi-descriptor feature extraction: Applications on SAR image registration Synthetic aperture radar (SAR) images have found increasing attention in various applications, such as remote sensing, surveillance, and disaster management. Unlike optical sensors, SAR can capture images in any weather conditions at any time, making it particularly valuable....","categories": [],
+        "tags": ["Image Registration","SAR","Computer Vision","Deep Learning","Feature Detection","Feature Description"],
+        "url": "/posts/2024/10/Expert-systems-with-applications-2024/",
+        "teaser": null
       }]
