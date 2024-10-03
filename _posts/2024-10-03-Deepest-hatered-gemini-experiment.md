@@ -8,7 +8,7 @@ tags:
   - Gemini
   - LLM
 ---
-I asked gemini to extend on this text and try to mimic it's tone and style. The results are interesting.
+I asked Gemini to extend on Faputas hatered for her mother's killers and try to mimic its tone and style. The results are interesting.
 
 
 "I cannot forgive your eyes that saw Faputa and her siblings as nothing more than appetizing. Your mouths that use the same words and  prayers as  mother, Those mouths I cannot forgive. I cannot forgive your shapes that continue to blaspheme mother with your being. Your lives that continue to exist, I cannot forgive.
