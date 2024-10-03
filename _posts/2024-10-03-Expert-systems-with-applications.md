@@ -27,7 +27,7 @@ that the proposed method outperforms most of the traditional and deep learning-b
 
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/FineRegistration.png" alt="Fine Registration" caption="" %}
 
-{% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/FeatureMatchingFineStage.png" alt="Feature Matching in Fine Stage" caption="Feature Matching in Fine Stage" %}
+{% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/FeatureMatchingFineStage.png" alt="Feature Matching in Fine Stage" caption="" %}
 
 {% include figure image_path="/assets/papers_miscs/Expert_Systems_with_Applications_2024/PatchBasedMatching.png" alt="Patch-based Matching in Fine Stage" caption="" %}
 
