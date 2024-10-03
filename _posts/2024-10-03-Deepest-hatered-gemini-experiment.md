@@ -1,5 +1,5 @@
 ---
-title: "Deep Hatred"
+title: "Gemini Experiment"
 date: 2024-10-03
 permalink: /posts/2022/03/Deepest-hatered-Gemini-Experiment/
 tags:
