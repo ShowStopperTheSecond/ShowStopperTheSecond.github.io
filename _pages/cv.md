@@ -19,9 +19,9 @@ Education
 Research Interests
 ======
 * Computer Vision
+* Wireless networks
 * Signal Processing
 * Machine Learning
-* Generative Models
 * Reinforcement Learning
 * Deep Learning
 * Image Processing
@@ -29,22 +29,14 @@ Research Interests
 
 Publications
 =========
-* <small>N. Heydari, J. Norouzi, M.S. Helfroush, and H. Danyali. ”Dynamic Hand Gesture Recognition with 2DCNN-LSTM and Improved Keyframe Extraction” ICCKE2024 (Under Review) </small>
-
-* <small>J. Norouzi, M.S. Helfroush, A. Liaghat, and H. Danyali. ”Beyond Outlier Removal: Integrated Ensemble Matching for Accurate Image Keypoint Correspondence” in Knowledge-Based Systems (Under Review)</small>
-
-* <small>A. Liaghat, M.S. Helfroush, J. Norouzi and H. Danyali. ”OS-CycleGAN: Modified CycleGAN-based Descriptors for Optical and SAR Image Matching” in IEEE Transactions on Geoscience and Remote Sensing (Under Review)</small>
-
-* <small>J. Norouzi, M.S. Helfroush, A. Liaghat, and H. Danyali. ”A Deep-Based Approach for Multi-Descriptor Feature Extraction:Applications on SAR Image Registration” Expert Systems With Applications 2024 Nov 15;254:124291</small>
-
-* <small>J. Norouzi, M.S. Helfroush, A. Liaghat, and H. Danyali. ”Robust Feature-Based Image Matching Through Dual Descriptors (Presented Orally). 2024 International Conference on Advanced Technology (ICAT) ”</small>
-
-* <small>A. Liaghat, M.S. Helfroush, J. Norouzi, and H. Danyali. ”Airborne SAR to Optical Image Registration Based on SAR Georeferencing and Deep Learning Approach,” in IEEE Sensors Journal, vol. 23, no. 21, pp. 26446-26458, 1 Nov.1, 2023, doi: 10.1109/JSEN.2023.3314608.</small>
-
-* <small>J. Norouzi, A. Liaghat, M.S. Helfroush, and H. Danyali. ”VGG16-based Feature Fusion For Image Kyepoint Description,” 2023 31st International Conference on Electrical Engineering (ICEE), Tehran, Iran, Islamic Republic of, 2023, pp. 1005-1009, doi: 10.1109/ICEE59167.2023.10334668.</small>
-
-
-* <small>J. Norouzi, A. Liaghat, M.S. Helfroush, and H. Danyali. ”A Novel Deep Learning Framework For Image KeyPoint Description,” 2022 12th International Conference on Computer and Knowledge Engineering (ICCKE), Mashhad, Iran, Islamic Republic of, 2022, pp. 332-336, doi: 10.1109/ICCKE57176.2022.9960057.</small>
+* <small>N. Heydari, **J. Norouzi**, M.S. Helfroush, and H. Danyali. ”Dynamic Hand Gesture Recognition with 2DCNN-LSTM and Improved Keyframe Extraction” ICCKE2024 (Under Review) </small>
+* <small>**J. Norouzi**, M.S. Helfroush, A. Liaghat, and H. Danyali. ”Beyond Outlier Removal: Integrated Ensemble Matching for Accurate Image Keypoint Correspondence” in Knowledge-Based Systems (Under Review)</small>
+* <small>A. Liaghat, M.S. Helfroush, **J. Norouzi** and H. Danyali. ”OS-CycleGAN: Modified CycleGAN-based Descriptors for Optical and SAR Image Matching” in IEEE Transactions on Geoscience and Remote Sensing (Under Review)</small>
+* <small>**J. Norouzi**, M.S. Helfroush, A. Liaghat, and H. Danyali. ”A Deep-Based Approach for Multi-Descriptor Feature Extraction:Applications on SAR Image Registration” Expert Systems With Applications 2024 Nov 15;254:124291</small>
+* <small>**J. Norouzi**, M.S. Helfroush, A. Liaghat, and H. Danyali. ”Robust Feature-Based Image Matching Through Dual Descriptors (Presented Orally). 2024 International Conference on Advanced Technology (ICAT) ”</small>
+* <small>A. Liaghat, M.S. Helfroush, **J. Norouzi**, and H. Danyali. ”Airborne SAR to Optical Image Registration Based on SAR Georeferencing and Deep Learning Approach,” in IEEE Sensors Journal, vol. 23, no. 21, pp. 26446-26458, 1 Nov.1, 2023, doi: 10.1109/JSEN.2023.3314608.</small>
+* <small>**J. Norouzi**, A. Liaghat, M.S. Helfroush, and H. Danyali. ”VGG16-based Feature Fusion For Image Kyepoint Description,” 2023 31st International Conference on Electrical Engineering (ICEE), Tehran, Iran, Islamic Republic of, 2023, pp. 1005-1009, doi: 10.1109/ICEE59167.2023.10334668.</small>
+* <small>**J. Norouzi**, A. Liaghat, M.S. Helfroush, and H. Danyali. ”A Novel Deep Learning Framework For Image KeyPoint Description,” 2022 12th International Conference on Computer and Knowledge Engineering (ICCKE), Mashhad, Iran, Islamic Republic of, 2022, pp. 332-336, doi: 10.1109/ICCKE57176.2022.9960057.</small>
 
 
   <ul>{% for post in site.publications %}
