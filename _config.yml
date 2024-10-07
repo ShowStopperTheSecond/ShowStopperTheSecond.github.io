@@ -182,6 +182,8 @@ include:
   - .htaccess
   - _pages
   - _playground
+  - _reads
+  - _science
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"

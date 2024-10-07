@@ -2,13 +2,18 @@
 main:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
+
   - title: "Posts"
     url: /year-archive/
-  - title: "Code PlayGround"
-    url: /playground/
+  - title: "Reads"
+    url: /reads/
+  - title: "Scientific Articles"
+    url: /scientific_articles/
+  - title: "Projects"
+    url: /projects/
   - title: "CV"
     url: /cv/
+  - title: "About"
+    url: /about/
   - title: "Contacts"
     url: /contacts/

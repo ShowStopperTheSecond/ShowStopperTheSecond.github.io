@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Beyond Outlier Removal: Integrated Ensemble Matching forAccurate Image Keypoint Correspondence",
-        "excerpt":"This paper presents a novel two-tier filtering approach for robust feature matching and geometric transformation estimation in computer vision tasks. Our method combines sub-descriptor matching and multi-descriptor ensembling to significantly improve the accuracy and reliability of keypoint correspondences across images. Our approach is evaluated on both classic hand- crafted algorithms...","categories": [],
+        "excerpt":"This project presents a novel two-tier filtering approach for robust feature matching and geometric transformation estimation in computer vision tasks. Our method combines sub-descriptor matching and multi-descriptor ensembling to significantly improve the accuracy and reliability of keypoint correspondences across images. Our approach is evaluated on both classic hand- crafted algorithms...","categories": [],
         "tags": ["Deep Learning","Feature Detection","Feature Description","Feature Matching"],
         "url": "/posts/2024/10/Knowledge-based-systems-2024/",
         "teaser": null
