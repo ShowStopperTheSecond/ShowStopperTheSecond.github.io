@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Anna Karnenia"
+title: "Anna Karenina"
 permalink: /reads/anna_karenina/notes
 author_profile: true
 ---
