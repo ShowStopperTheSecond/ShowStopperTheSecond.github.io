@@ -7,7 +7,7 @@ author_profile: true
 
 Some of the books I loved:
 
-
+- <ul><a href="{{ site.baseurl }}/reads/anna_karnenia">Anna Karnenia</a></ul>
 - <ul><a href="{{ site.baseurl }}/reads/all_men_are_mortal">All Men are Mortal</a></ul>
 - <ul><a href="{{ site.baseurl }}/reads/atomic_habits">Atomic Habits</a></ul>
 - <ul><a href="{{ site.baseurl }}/reads/the_alchemist">The Alchemist</a></ul>
