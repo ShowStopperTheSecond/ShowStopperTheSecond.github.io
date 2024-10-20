@@ -295,3 +295,133 @@ rebel against what is, otherwise they wouldn't be men. And we who
 aspire to forge a world for them and imprison them in it, they can't
 help but hate us. The very order, the peace that we dream of for them,
 would be their worst possible curse."
+
+
+
+- Men can create their own happiness and that of others," said Richet.
+I shrugged my shoulders. "They'll never be happy."
+"You're wrong. They'll be happy the day they become reasonable,"
+he said.
+"They don't even want to be happy." I retorted. "They're only too
+happy to kill time while waiting for time to kill them. You-all of you
+-you're simply killing time by dazzling yourselves with your own
+brillia nce."
+
+
+- But what I liked above all was to witness the combat
+of a man against himself.
+
+
+- He was trying to provoke me. He did not know
+I had no honor to defend, no anger to satisfy. And neither was there
+anything to stop me from slapping him, beating him, throwing him to
+the ground. I was subject to none of their conventions. If they knew
+to what degree I was free from them and their inane rules, then they
+would have been really frightened of me.
+
+
+
+- "A man," I said, "once told me that there is only one good: to act
+according to one's conscience. I think he was right and that all we
+pretend to do for others is worthless."
+
+
+- but if you have to guard it so carefully, being healthy is no
+longer a good,"
+
+
+- I gave myself to you completely," she said. "And I believed you had
+given yourself completely to me, in life as well as in death. And you
+were only lending yourself to me for a few scant years." A sob choked
+her voice. "Just another woman among millions. One day you won't
+even remember my name. And it will still be you. It will be you and no
+one else." She stood up. "No! No! It's not possible!" she cried out.
+
+
+- "What is your love?" she said scornfully. "When two mortal beings
+love each other, that love molds them together body and soul; it's their
+very substance. But for you, it's ... it's an accident." She pressed her
+hand against her brow. "Oh, God! How alone I am!"
+
+
+
+- "You'll live in my heart longer than you'd have lived in the heart of
+any mortal man," I said.
+"No," she retorted. "If you were mortal, I'd go on living in you
+until the end of the world, because your death would be the end of the
+world for me. But instead, I'm going to die in a world that will never
+end."
+
+
+- For them living was merely not dying. \Vhat was the
+good of struggling for them? They would soon be delivered in any
+case; they would die, each in his turn.
+
+
+- How much longer
+would I still be able to hear her voice? And when their smiles and
+their tears no longer found an echo in me, what would become of me?
+
+
+- Why live, if living is merely not dying? But to die in order to save
+one's life, is not that the greatest dupery of all?
+
+
+- I've got to feel that I'm alive, even if I have
+to die trying
+
+
+- \Ve don't have to count on the future to give a meaning to our acts.
+If that were the case, all action would be impossible. \Ve have to carry
+on our fight the way we decided to carry it on. That's all.
+
+
+
+- The stakes were blazing, the wind was scattering the ashes
+of the two Augustinian monks. There is only one good: to act accord-
+ing to one's conscience. Stretched out on his bed, Antonio was smiling.
+They were neither insane nor bloated with pride; I understood them
+now. They were men who 'wanted to fulfill their destinies as men by
+choosing their own lives and deaths: free men.
+
+
+- "You should be lead-
+ing rather than obeying them."
+"But I can't look upon things the same way they do," I said. He
+looked at me irritably and I continued, "I can do whatever they ask
+me to do. But how can I decide for them? How can I possibly know
+what they believe to be good or bad for themselves?"
+
+
+
+- What makes you think that a man must prefer the cause he hap-
+pens to be serving for the moment to his own destiny? "I can't make any distinction between the two."
+
+
+- You're already far off in the future," he said. "And you look upon
+these moments as if they were part of the past. And all past enterprises
+appear derisive when they're seen only as dead, embalmed, and buried.
+That Carmona was great and free for two hundred years doesn't move
+you much today. But you know very well what Carmona meant to
+those who loved her. I don't believe you were wrong in defending her
+against Genoa.
+
+
+- She sank back into the leather chair and stared at her reflection in
+the mirror. She was alone, she was weary. She would grow old, alone
+and weary, without receiving anything in exchange for the gifts she
+lavished and which were not even sought from her, fighting for them,
+without them, against them, doubting them and doubting herself. In my
+heart, something still trembled-pity.
+
+
+- Because I wanted nothing for myself with them, there was nothing I
+could want for them. I would have had to love her. I did not love her. I
+wanted nothing.
+
+
+- The image of her face was
+now snuffed out completely, forever, and in my heart, even the beating
+of her heart had stopped. You'll forget me. It was not I who had for-
+gotten her. She had slipped out of the world, had slipped out of me who
+would never leave this world and yet who did not belong to it.
