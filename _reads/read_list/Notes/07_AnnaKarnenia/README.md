@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Anna Karnenia"
-permalink: /reads/anna_karnenia/notes
+permalink: /reads/anna_karenina/notes
 author_profile: true
 ---
 
